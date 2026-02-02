@@ -6,6 +6,7 @@
     <title>Trip Vol Vol</title>
     <link rel="shortcut icon" href="./public/images/imagelogo.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/hmoepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- header  -->
@@ -27,7 +28,80 @@
     </header>
     <!-- hero section -->
      <section class="hero-section">
-
+            <div class="txt">
+                <h1 >សូមស្វាគមន៍<span id="auto-type"></span></h1>
+                <p>សូមឲ្យការធ្វើដំណើររបស់អ្នកនាំមកនូវសេចក្តីរីករាយ កម្លាំងវិជ្ជមាន និងអនុស្សាវរីយ៍ល្អៗ ដែលអាចនៅជាមួយអ្នកយូរអង្វែង។</p>
+            </div>
+            <div class="acrtion-bar">
+                <div class="block">
+                    <i id="icon" class="fa-solid fa-location-dot"></i>
+                    <p>Where are you going ?</p>
+                </div>
+                 <div class="block">
+                    <i id="icon" class="fa-solid fa-calendar-days"></i>
+                    <p>Add Date</p>
+                </div>
+                 <div class="block">
+                    <i id="icon" class="fa-solid fa-user"></i>
+                    <p>Add Geust</p>
+                </div>
+                 <div class="block">
+                  
+                    <button>
+                          <i id="icon-serach" class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
+                </div>
+            </div>
      </section>
+
+     <!-- main contain -->
+      
+     <main class="main-contain">
+        <div class="title">
+           <div class="txt">
+             <h1>កញ្ចប់សេវាកម្មរបស់ពួកយើង</h1>
+            <p>រីករាយជាមួយនិងពួកយើង​ បូកនិងពេលវេលាល្អៗ</p>
+           </div>
+            <div class="link">
+                <a href="">view all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8iHsliRw28sLuhG3A1it26w2Jw5FBVT35IA&s" alt="">
+                <div class="card-title">
+                    <h3>ប្រាសាទអង្គរវត្ត</h3>
+                    <p>ជាខេត្តមួយដែលមានសម្រស់ធម្មជាតិ និងភាពស្ងប់ស្ងាត់គួរឲ្យស្រឡាញ់</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT26kyzxm6RRNIGad_u560I-oEmJDRrpiOc3Q&s" alt="">
+                <div class="card-title">
+                    <h3>ខេត្តកែប</h3>
+                    <p>ជាខេត្តមួយដែលមានសម្រស់ធម្មជាតិ និងភាពស្ងប់ស្ងាត់គួរឲ្យស្រឡាញ់</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="https://d34vm3j4h7f97z.cloudfront.net/original/4X/8/1/e/81e31f6817402c4a711d09891d53515e0ada2571.jpeg" alt="">
+                <div class="card-title">
+                    <h3>ខេត្តកំពត</h3>
+                    <p>ជាសម្បត្តិបេតិកភណ្ឌវប្បធម៌ដ៏អស្ចារ្យ និងមានតម្លៃខ្ពស់បំផុតមួយរបស់ជាតិខ្មែរ</p>
+                </div>
+            </div>
+        </div>
+     </main>
 </body>
 </html>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+ <script>
+     var typed = new Typed('#auto-type', {
+      strings: ['មកកាន់ដំណើរកំសាន្តដ៏មានន័យ'],
+      typeSpeed: 40,
+      backSpeed:40,
+      loop:true,
+    });
+ </script>
