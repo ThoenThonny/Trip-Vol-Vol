@@ -401,3 +401,127 @@ body {
     }
   }
 }
+
+.main-footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px 30px 30px;
+ 
+  background-color: rgba(243, 243, 243, 0.822);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin-top: 80px;
+  display: flex;
+  & .block{
+    width: 450px;
+    height: auto;
+    & .logo{
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      & img{
+        width: 90px;
+        height: 90px;
+      }
+      & h4{
+        font-size: 23px;
+        
+      }
+    }
+    & p{
+      font-size: 19px;
+      color: gray;
+      font-family: var(--primary-font);
+      padding-left: 30px;
+    }
+
+    & .block-icon{
+      width: auto;
+      height: auto;
+      padding-left: 27px;
+      margin-top: 15px;
+      display: flex;
+      gap: 20px;
+      & #icon{
+        width: 35px;
+        height: 35px;
+        place-content: center;
+        border: 1px solid rgba(141, 136, 136, 0.627);
+        border-radius: 50%;
+      }
+    }
+    
+  }
+
+  & .block:nth-child(2), .block:nth-child(3){
+    padding-top: 29px;
+    & h4{
+      font-size: 23px;
+    }
+    & .link{
+      width: auto;
+      height: auto;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      & a{
+        font-size: 18px;
+        color: gray;
+        text-decoration: none;
+        transition: 0.3s all;
+      }
+      & a:hover{
+        color: red
+      }
+    }
+  }
+
+  & .block:nth-child(4){
+    width: 330px;
+     padding-top: 29px;
+
+      & h4{
+      font-size: 23px;
+    }
+
+    & .para{
+      margin-top: 30px;
+      & p{
+        padding-left: 0;
+      }
+
+      & form{
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & input{
+          padding: 20px 20px;
+          border-radius: 10px;
+          outline: none;
+          border: 1px solid gray;
+          font-size: 20px;
+        }
+        & button{
+          padding: 20px 20px;
+          border-radius: 10px;
+          border: none;
+          background-color: var(--primary-color);
+          font-size: 20px;
+          color: white;
+          cursor: pointer;
+          transition: 0.7s all;
+        }
+        & button:hover{
+          transition: 0.7s all;
+          background-color: blue;
+        }
+      }
+    }
+  }
+}
